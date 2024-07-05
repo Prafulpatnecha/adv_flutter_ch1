@@ -19,7 +19,7 @@ samples, guidance on mobile development, and a full API reference.
 https://github.com/Prafulpatnecha/adv_flutter_ch1/assets/144161200/9588fb47-d514-49ef-a29b-1d6f1a6fea1f
 
 
-<h2>➡️ </h2>
+<h2>➡️AdvFlutterCh1 </h2>
 <hr>
 <p>
 <a href ="">
