@@ -28,3 +28,94 @@ https://github.com/Prafulpatnecha/adv_flutter_ch1/assets/144161200/9588fb47-d514
 </a>
 </p>
 <hr>
+
+
+# AdvFlutterCh1
+
+
+## Run Locally
+
+Dark And Light Mode
+
+```bash
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    Timer.periodic(Duration(milliseconds: 1), (timer) {
+      setState(() {
+
+      });
+    },);
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      darkTheme: ThemeData.dark(),
+      theme: ThemeData.light(),
+      themeMode: isDark?ThemeMode.dark:ThemeMode.light,
+      routes: AppRoutes.routes,
+    );
+  }
+}
+```
+
+command Part
+
+```bash
+    darkTheme: ThemeData.dark(),
+    theme: ThemeData.light(),
+    themeMode: isDark?ThemeMode.dark:ThemeMode.light,
+```
+
+globle keys
+
+```bash
+    bool isDark=false;
+    Color colorYellow=const Color(0xffFFCC00);
+    Color colorRed=const Color(0xffFD3B31);
+```
+
+Command Run Button Full Details
+
+```bash
+        GestureDetector(
+                onTap: () {
+                  setState(() {
+                    isDark=false;
+                  });
+                },
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Container(
+                    height:115,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                    color: colorYellow,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    alignment: Alignment.center,
+                    child: Text('Light Icon',style: TextStyle(color: isDark?Colors.white:Colors.black,fontWeight: FontWeight.bold,fontSize: 25),),
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  setState(() {
+                    isDark=true;
+                  });
+                },
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Container(
+                    height:115,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                    color: colorRed,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    alignment: Alignment.center,
+                    child: Text('Dark Icon',style: TextStyle(color: isDark?Colors.white:Colors.black,fontWeight: FontWeight.bold,fontSize: 25),),
+                  ),
+                ),
+              ),
+```
+
+
