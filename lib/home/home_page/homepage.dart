@@ -78,6 +78,9 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
+              ElevatedButton(onPressed: () {
+                Navigator.of(context).pushNamed('/stepper');
+              }, child: const Text('Stepper Go To Next Page')),
             ],
           ),
         ),
