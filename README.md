@@ -141,3 +141,13 @@ Command Run Button Full Details
 <div align="center">
   <img src="https://github.com/Prafulpatnecha/adv_flutter_ch1/assets/144161200/e4967a7d-8350-4ef9-89a9-974a9f6136c4" height=450px hspace=20>
 </div>
+
+## What Is State Management?
+
+State Management in Flutter, everything is a widget. The widget can be classified into two categories, one is a Stateless widget, and another is a Stateful widget. The Stateless widget does not have any internal state. It means once it is built, we cannot change or modify it until they are initialized again. On the other hand, a Stateful widget is dynamic and has a state. It means we can modify it easily throughout its lifecycle without reinitialized it again.
+
+## What is provider And how to use definition?
+
+~ A provider is a person who gives someone something they need. If your parents both have jobs so they can feed you and buy you what you need, you can call them providers.
+
+~ In Flutter, a "provider" refers to a design pattern and a package that helps manage state in your application. It's commonly used to efficiently share and update data between different parts of your app, such as widgets, without the need for prop drilling (passing data through multiple widget layers).
