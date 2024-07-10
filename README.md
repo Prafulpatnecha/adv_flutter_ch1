@@ -139,7 +139,7 @@ Command Run Button Full Details
 <h3 align="center"><i>1.3 Provider Tree</i></h3>
 <h1></h1>
 <div align="center">
-  <img src="https://github.com/Prafulpatnecha/adv_flutter_ch1/assets/144161200/e4967a7d-8350-4ef9-89a9-974a9f6136c4" height=450px hspace=20>
+  <img src="https://github.com/Prafulpatnecha/adv_flutter_ch1/assets/144161200/034c2da5-0b07-4ac0-a50a-aecf5fc23680" height=450px hspace=20>
 </div>
 
 ## What Is State Management?
