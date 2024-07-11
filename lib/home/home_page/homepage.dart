@@ -81,9 +81,17 @@ class _HomePageState extends State<HomePage> {
               ElevatedButton(onPressed: () {
                 Navigator.of(context).pushNamed('/stepper');
               }, child: const Text('Stepper Go To Next Page')),
-              ElevatedButton(onPressed: () {
-                Navigator.of(context).pushNamed('/provider');
-              }, child: const Text('Provider'))
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton(onPressed: () {
+                    Navigator.of(context).pushNamed('/provider');
+                  }, child: const Text('Provider')),
+                  ElevatedButton(onPressed: () {
+                    Navigator.of(context).pushNamed('/quotes');
+                  }, child: const Text('Quotes')),
+                ],
+              ),
             ],
           ),
         ),
