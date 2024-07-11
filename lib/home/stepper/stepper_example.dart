@@ -1,7 +1,7 @@
 import 'package:enhance_stepper/enhance_stepper.dart';
 import 'package:flutter/material.dart';
 
-import '../../component/textFiledContainer.dart';
+import '../../component/text_filed_container.dart';
 import '../../utils/golble_value.dart';
 
 
@@ -57,11 +57,11 @@ class _StepperPageState extends State<StepperPage> {
                   title: const Text('Account'),
                   content: Column(
                     children: [
-                      SizedBox(height: 10,),
+                      const SizedBox(height: 10,),
                       buildTextField(textFind: 'Full Name', context: context),
-                      SizedBox(height: 10,),
+                      const SizedBox(height: 10,),
                       buildTextField(textFind: 'Email', context: context),
-                      SizedBox(height: 10,),
+                      const SizedBox(height: 10,),
                       buildTextField(textFind: 'Password', context: context),
                     ],
                   ),
@@ -73,7 +73,7 @@ class _StepperPageState extends State<StepperPage> {
                   title: const Text('Address'),
                   content: Column(
                     children: [
-                      SizedBox(height: 10,),
+                      const SizedBox(height: 10,),
                       buildTextField(textFind: 'Full Address', context: context),
                     ],
                   ),
@@ -85,7 +85,7 @@ class _StepperPageState extends State<StepperPage> {
                   title: const Text('Mobile Number'),
                   content:Column(
                     children: [
-                      SizedBox(height: 10,),
+                      const SizedBox(height: 10,),
                       buildTextField(textFind: 'Mobile Number', context: context),
                     ],
                   ),

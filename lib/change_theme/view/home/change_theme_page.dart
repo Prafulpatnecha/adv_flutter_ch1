@@ -8,7 +8,7 @@ class ChangeThemePage extends StatelessWidget {
   const ChangeThemePage({super.key});
 
   @override
-  Widget build(BuildContext context) {;
+  Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) => ProviderMethod(),
       builder: (context, child) =>  MaterialApp(
@@ -46,7 +46,7 @@ class ChangeThemeProvider extends StatelessWidget {
             children: [
               IconButton(
                 onPressed: () {
-                  Navigator.of(context).pop();
+                  // Navigator.of(context).pushNamed('/');
                 },
                 icon: const Icon(
                   Icons.navigate_before,
@@ -76,9 +76,9 @@ class ChangeThemeProvider extends StatelessWidget {
             ),
             // child: Image.asset('assets/img/girl.jpg',fit: BoxFit.cover,),
           ),
-          SizedBox(height: 15,),
+          const SizedBox(height: 15,),
           Text('Testing User',style: TextStyle(color: Theme.of(context).colorScheme.primary,fontSize: 30,fontWeight: FontWeight.bold),),
-          SizedBox(height: 50,),
+          const SizedBox(height: 50,),
           ListTile(
             leading: Icon(!providerMethodTrue.isMode?Icons.sunny:Icons.brightness_3,color: Theme.of(context).colorScheme.onPrimary,size: 30,),
             title: Text((!providerMethodTrue.isMode)?'  Light Mode':'  Dark Mode',style: TextStyle(color: Theme.of(context).colorScheme.primary,fontSize: 20,fontWeight: FontWeight.bold),),

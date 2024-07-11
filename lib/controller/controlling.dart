@@ -16,7 +16,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    Timer.periodic(Duration(milliseconds: 1), (timer) {
+    Timer.periodic(const Duration(milliseconds: 1), (timer) {
       setState(() {
       });
     },);

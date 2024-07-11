@@ -1,8 +1,6 @@
-import 'package:adv_flutter_ch1/home/stepper/stepper_example.dart';
-import 'package:enhance_stepper/enhance_stepper.dart';
 import 'package:flutter/material.dart';
 
-import '../../component/textFiledContainer.dart';
+import '../../component/text_filed_container.dart';
 import '../../utils/golble_value.dart';
 class StepperPageWork extends StatefulWidget {
   const StepperPageWork({super.key});
@@ -92,6 +90,6 @@ class _StepperPageWorkState extends State<StepperPageWork> {
           ),
         ],
       ),
-    );;
+    );
   }
 }

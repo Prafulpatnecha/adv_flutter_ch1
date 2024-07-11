@@ -86,9 +86,9 @@ class MyTheme2
   // todo dark mode
   static ThemeData darkThemes=ThemeData.dark().copyWith(
       primaryColor: Colors.black,
-      appBarTheme: AppBarTheme(
+      appBarTheme: const AppBarTheme(
         backgroundColor: Colors.black,
-        titleTextStyle: const TextStyle(color: Colors.white,fontSize: 22),
+        titleTextStyle: TextStyle(color: Colors.white,fontSize: 22),
         centerTitle: true,
         elevation: 5,
         // shadowColor: Colors.white54,
@@ -98,7 +98,7 @@ class MyTheme2
       ),
       // switchTheme: SwitchThemeData(trackColor: WidgetStateProperty.all(Colors.orangeAccent)),
       switchTheme: SwitchThemeData(trackColor: WidgetStateProperty.all(Colors.orange.shade50),trackOutlineColor: WidgetStateProperty.all(Colors.orangeAccent),thumbColor: WidgetStateProperty.all(Colors.orangeAccent)),
-      colorScheme: ColorScheme(
+      colorScheme: const ColorScheme(
         brightness: Brightness.dark,
         error: Colors.red,
         onError: Colors.white,
