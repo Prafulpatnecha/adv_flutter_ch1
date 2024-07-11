@@ -32,8 +32,6 @@ https://github.com/Prafulpatnecha/adv_flutter_ch1/assets/144161200/9588fb47-d514
 <img src="https://github.com/Prafulpatnecha/adv_flutter_ch1/blob/master/img5.png" width="22%" Height="35%">
 <img src="https://github.com/Prafulpatnecha/adv_flutter_ch1/blob/master/img6.png" width="22%" Height="35%">
 <img src="https://github.com/Prafulpatnecha/adv_flutter_ch1/blob/master/img7.png" width="22%" Height="35%">
-<img src="https://github.com/Prafulpatnecha/adv_flutter_ch1/blob/master/img8.png" width="22%" Height="35%">
-
 
 
 </a>
@@ -151,3 +149,19 @@ State Management in Flutter, everything is a widget. The widget can be classifie
 ~ A provider is a person who gives someone something they need. If your parents both have jobs so they can feed you and buy you what you need, you can call them providers.
 
 ~ In Flutter, a "provider" refers to a design pattern and a package that helps manage state in your application. It's commonly used to efficiently share and update data between different parts of your app, such as widgets, without the need for prop drilling (passing data through multiple widget layers).
+
+
+
+###
+<div align="center">
+<a href="https://github.com/Prafulpatnecha/adv_flutter_ch1/tree/master/lib/change_theme">-> Code File Link <-</a>
+</div>
+
+<h1></h1>
+<h3 align="center"><i>1.4 Provider & Change Theme using Provider</i></h3>
+<h1></h1>
+<div align="center">
+<img src="https://github.com/Prafulpatnecha/adv_flutter_ch1/blob/master/provider_image_1.png" width="22%" Height="35%">
+<img src="https://github.com/Prafulpatnecha/adv_flutter_ch1/blob/master/provider_image_2.png" width="22%" Height="35%">
+</div>
+###
