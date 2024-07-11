@@ -44,23 +44,25 @@ class QuotesHomePage extends StatelessWidget {
         itemBuilder: (context, index) => Card(
           child: ListTile(
             // leading: Text(index.toString()),
-            title: Text(providerQuotesPageTrue.quotesAddingList[index]['quote']),
-            subtitle: Text(providerQuotesPageTrue.quotesAddingList[index]
-                    ['author']),
+            title: Text(providerQuotesPageTrue.quotesAddingList[index]["quote"]),
+            subtitle: Text(providerQuotesPageTrue.quotesAddingList[index]['author']),
+            trailing: IconButton(onPressed: () {
+              providerQuotesPageFalse.provideRemove(index);
+            },icon: Icon(Icons.delete_outline),),
           ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          TextEditingController quote = TextEditingController();
-          TextEditingController author = TextEditingController();
+          TextEditingController txtquote = TextEditingController();
+          TextEditingController txtauthor = TextEditingController();
           showDialog(
             context: context,
             builder: (context) => AlertDialog(
               title: Column(
                 children: [
                   TextFormField(
-                    controller: author,
+                    controller: txtauthor,
                     decoration: InputDecoration(
                       label: Text('Author Name'),
                       border: OutlineInputBorder(
@@ -71,7 +73,7 @@ class QuotesHomePage extends StatelessWidget {
                     height: 10,
                   ),
                   TextFormField(
-                    controller: quote,
+                    controller: txtquote,
                     decoration: InputDecoration(
                       label: Text('Quotes'),
                       border: OutlineInputBorder(
@@ -83,7 +85,7 @@ class QuotesHomePage extends StatelessWidget {
               actions: [
                 ElevatedButton(
                   onPressed: () {
-                    QuotesModal quotesModal=QuotesModal(quote: quote.text,author: author.text);
+                    QuotesModal quotesModal=QuotesModal(quote: txtquote.text.toString(),author: txtauthor.text.toString());
                     providerQuotesPageFalse.addUserList(quotesModal);
                     // List<QuotesModal> listQuotes=[];
                     // listQuotes.add(QuotesModal(author: author.text.toString(),quote: quotes.text.toString()));
@@ -101,5 +103,5 @@ class QuotesHomePage extends StatelessWidget {
     );
   }
 }
-TextEditingController quotes=TextEditingController();
-TextEditingController author=TextEditingController();
+TextEditingController txtquote=TextEditingController();
+TextEditingController txtauthor=TextEditingController();
