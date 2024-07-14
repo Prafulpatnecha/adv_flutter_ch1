@@ -180,7 +180,7 @@ https://github.com/Prafulpatnecha/adv_flutter_ch1/assets/144161200/a1c8e552-1216
 
 ###
 <h1></h1>
-<h3 align="center"><i>1.5 One Time Intro Screen in Flutter</i></h3>
+<h3 align="center"><i>1.5 One Time Intro Screen in Flutter (intro png 1)</i></h3>
 <h1></h1>
 <div align="center">
 <img src="https://github.com/Prafulpatnecha/adv_flutter_ch1/blob/master/intro_image_1.png" height=450px hspace=20>
