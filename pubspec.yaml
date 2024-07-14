@@ -39,6 +39,7 @@ dependencies:
   enhance_stepper: ^1.0.1
   cupertino_stepper: ^0.2.1
   provider: ^6.1.2
+  shared_preferences: ^2.2.3
 
 dev_dependencies:
   flutter_test:

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-
 import '../change_theme/view/home/change_theme_page.dart';
 import '../home/home_page/homepage.dart';
 import '../home/stepper/stepper_example.dart';
 import '../home/stepper/stepper_page_work.dart';
+import '../introscreen/view/home/intro_page.dart';
 import '../quotesdata/view/home/quotes_data_page.dart';
 class AppRoutes
 {
@@ -13,5 +13,6 @@ class AppRoutes
     '/stepper2':(context)=> const StepperPageWork(),
     '/provider':(context)=> const ChangeThemePage(),
     '/quotes':(context)=> const QuotesDataPage(),
+    '/intro':(context)=> const IntroPage(),
   };
 }

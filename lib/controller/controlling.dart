@@ -1,31 +1,26 @@
-import 'dart:async';
 
 import 'package:adv_flutter_ch1/controller/routes.dart';
-import 'package:adv_flutter_ch1/utils/golble_value.dart';
+import 'package:adv_flutter_ch1/quotesdata/provider/provider_qoutes_page.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../utils/theme_data.dart';
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  @override
   Widget build(BuildContext context) {
-    Timer.periodic(const Duration(milliseconds: 1), (timer) {
-      setState(() {
-      });
-    },);
+    // Timer.periodic(const Duration(milliseconds: 1), (timer) {
+    //   setState(() {
+    //   });
+    // },);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       darkTheme: MyTheme.darkTheme,
       theme: MyTheme.lightTheme,
-      themeMode: isDark?ThemeMode.dark:ThemeMode.light,
-      initialRoute: '/',
+      themeMode: Provider.of<ProviderQuotesPage>(context).isDark?ThemeMode.dark:ThemeMode.light,
+      initialRoute: (Provider.of<ProviderQuotesPage>(context).introBool==false)?'/intro':'/',
       routes: AppRoutes.routes,
     );
   }
