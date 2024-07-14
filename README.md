@@ -153,9 +153,6 @@ State Management in Flutter, everything is a widget. The widget can be classifie
 
 
 ###
-<div align="center">
-<a href="https://github.com/Prafulpatnecha/adv_flutter_ch1/tree/master/lib/change_theme">-> Code File Link <-</a>
-</div>
 
 <h1></h1>
 <h3 align="center"><i>1.4 Provider & Change Theme using Provider</i></h3>
@@ -169,9 +166,6 @@ State Management in Flutter, everything is a widget. The widget can be classifie
 https://github.com/Prafulpatnecha/adv_flutter_ch1/assets/144161200/2f2a4577-474a-4d48-b387-cdb7436b551f
 
 ###
-<div align="center">
-<a href="https://github.com/Prafulpatnecha/adv_flutter_ch1/tree/master/lib/quotesdata">-> Code File Link <-</a>
-</div>
 
 <h1></h1>
 <h3 align="center"><i>1.5 Quotes Data Solving with Provider</i></h3>
