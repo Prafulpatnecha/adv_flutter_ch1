@@ -1,3 +1,4 @@
+import 'package:adv_flutter_ch1/contact_us_page/view/home/contact_page.dart';
 import 'package:flutter/material.dart';
 import '../change_theme/view/home/change_theme_page.dart';
 import '../home/home_page/homepage.dart';
@@ -14,5 +15,6 @@ class AppRoutes
     '/provider':(context)=> const ChangeThemePage(),
     '/quotes':(context)=> const QuotesDataPage(),
     '/intro':(context)=> const IntroPage(),
+    '/contact':(context)=> const ContactPage(),
   };
 }

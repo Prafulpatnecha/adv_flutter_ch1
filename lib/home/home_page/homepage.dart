@@ -77,9 +77,16 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-              ElevatedButton(onPressed: () {
-                Navigator.of(context).pushNamed('/stepper');
-              }, child: const Text('Stepper Go To Next Page')),
+              Row(
+                children: [
+                  ElevatedButton(onPressed: () {
+                    Navigator.of(context).pushNamed('/stepper');
+                  }, child: const Text('Stepper Go To Next Page')),
+                  ElevatedButton(onPressed: () {
+                    Navigator.of(context).pushNamed('/contact');
+                  }, child: const Text('Contact Us Page')),
+                ],
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
