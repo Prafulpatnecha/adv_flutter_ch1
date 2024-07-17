@@ -6,7 +6,7 @@ class ContactPage extends StatelessWidget {
   const ContactPage({super.key});
   @override
   Widget build(BuildContext context) {
-  ProviderQuotesPage providerQuoteTrue=Provider.of<ProviderQuotesPage>(context,listen: true);
+  // ProviderQuotesPage providerQuoteTrue=Provider.of<ProviderQuotesPage>(context,listen: true);
   ProviderQuotesPage providerQuoteFalse=Provider.of<ProviderQuotesPage>(context,listen: false);
     return Scaffold(
       body: Column(
@@ -19,6 +19,10 @@ class ContactPage extends StatelessWidget {
                 Navigator.of(context).pop();
               }, icon: const Icon(Icons.navigate_before,color: Colors.blue,size: 34,)),
               const Text('Contact Us',style: TextStyle(color: Colors.blue,fontSize: 30,fontWeight: FontWeight.bold),),
+              Spacer(),
+              IconButton(onPressed: () {
+                Navigator.of(context).pushNamed('/contact2');
+              }, icon: const Icon(Icons.navigate_next_outlined,color: Colors.blue,size: 34,)),
             ],
           ),
           const SizedBox(height: 40,),

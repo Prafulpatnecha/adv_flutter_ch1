@@ -108,4 +108,14 @@ class ProviderQuotesPage extends ChangeNotifier {
     Uri url=Uri.parse('https://dribbble.com/shots/24532478-Spotify-All-Ears-on-you-2');
     launchUrl(url,mode: LaunchMode.inAppWebView);
   }
+  void githubWeb()
+  {
+    Uri url=Uri.parse('https://github.com/Prafulpatnecha');
+    launchUrl(url,mode: LaunchMode.inAppWebView);
+  }
+  void smsMethod()
+  {
+    Uri url=Uri.parse('sms: 6355199097');
+    launchUrl(url);
+  }
 }
