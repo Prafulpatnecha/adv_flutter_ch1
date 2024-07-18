@@ -1,4 +1,66 @@
 
+
+List photoImage=[
+  {
+    'image':'assets/image/photos(20).jpeg'
+  },
+  {
+    'image':'assets/image/photos(19).jpeg'
+  },
+  {
+    'image':'assets/image/photos(18).jpeg'
+  },
+  {
+    'image':'assets/image/photos(17).jpeg'
+  },
+  {
+    'image':'assets/image/photos(16).jpeg'
+  },
+  {
+    'image':'assets/image/photos(15).jpeg'
+  },
+  {
+    'image':'assets/image/photos(14).jpeg'
+  },
+  {
+    'image':'assets/image/photos(13).jpeg'
+  },
+  {
+    'image':'assets/image/photos(12).jpeg'
+  },
+  {
+    'image':'assets/image/photos(11).jpeg'
+  },
+  {
+    'image':'assets/image/photos(10).jpeg'
+  },
+  {
+    'image':'assets/image/photos(9).jpeg'
+  },
+  {
+    'image':'assets/image/photos(8).jpeg'
+  },
+  {
+    'image':'assets/image/photos(7).jpeg'
+  },
+  {
+    'image':'assets/image/photos(6).jpeg'
+  },
+  {
+    'image':'assets/image/photos(5).jpeg'
+  },
+  {
+    'image':'assets/image/photos(4).jpeg'
+  },
+  {
+    'image':'assets/image/photos(3).jpeg'
+  },
+  {
+    'image':'assets/image/photos(1).jpeg'
+  },
+];
+
+
 List galleryImage=[
   {
     'image':'assets/image/photos(1).jpeg',
@@ -53,6 +115,11 @@ List galleryImage=[
   {
     'image':'assets/image/photos(11).jpeg',
     'type':'Animals',
+    'view':15,
+  },
+  {
+    'image':'assets/image/photos(12).jpeg',
+    'type':'File',
     'view':15,
   },
 ];
