@@ -227,8 +227,23 @@ https://github.com/user-attachments/assets/6e03e22a-62a3-4a49-8e27-4f81d52b8cac
 https://github.com/user-attachments/assets/08bcd150-0a05-4b31-a8e2-bec85fb102fe
 
 ###
+<h1></h1>
+<h3 align="center"><i>1.7 Photo Gallery With Biometric Authentication</i></h3>
+<h1></h1>
+<div align="center">
+<img src="https://github.com/Prafulpatnecha/adv_flutter_ch1/blob/master/finger_image_2.png" height=450px hspace=20>
+<img src="https://github.com/Prafulpatnecha/adv_flutter_ch1/blob/master/Screenshot_20240718_180112.png" height=450px hspace=20>
+<img src="https://github.com/Prafulpatnecha/adv_flutter_ch1/blob/master/finger_image_1.png" height=450px hspace=20>
+</div>
+
+<h1></h1>
+<div align="center">
+<a href="https://github.com/Prafulpatnecha/adv_flutter_ch1/tree/master/lib/gallery_photo_file">-> Code File Link <-</a>
+</div>
+<h1></h1>
+
+https://github.com/user-attachments/assets/ca60e536-7c5b-412c-8a55-9662636520b3
 
 
-https://github.com/user-attachments/assets/f1fa5349-0d05-42a8-bc12-06d8434891e5
 
 
