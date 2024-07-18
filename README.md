@@ -228,7 +228,7 @@ https://github.com/user-attachments/assets/08bcd150-0a05-4b31-a8e2-bec85fb102fe
 
 ###
 <h1></h1>
-<h3 align="center"><i>1.6 Contact Us Page With Interaction</i></h3>
+<h3 align="center"><i>1.7 Photo Gallery With Biometric Authentication</i></h3>
 <h1></h1>
 <div align="center">
 <img src="https://github.com/Prafulpatnecha/adv_flutter_ch1/blob/master/finger_image_2.png" height=450px hspace=20>
