@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'controller/controlling.dart';
+import 'json_parsing_file/provider/json_provider.dart';
 bool theme=false;
 bool intro=false;
 Future<void> main() async {
@@ -11,8 +12,11 @@ Future<void> main() async {
   theme = sharedPreferences.getBool('theme') ?? false;
   intro = sharedPreferences.getBool('intro')?? false;
   runApp(
-    ChangeNotifierProvider(
-      create: (context) => ProviderQuotesPage(),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => ProviderQuotesPage(),),
+        ChangeNotifierProvider(create: (context) => JsonProvider(),),
+      ],
       builder: (context, child) => const MyApp(),
     ),
   );

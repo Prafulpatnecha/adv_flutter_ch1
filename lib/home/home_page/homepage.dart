@@ -37,9 +37,17 @@ class HomePage extends StatelessWidget {
               Text('Yo Man!',style: TextStyle(color: providerQuotesPageTrue.isDark?Colors.white:Colors.black,fontSize: 30,fontWeight: FontWeight.bold,),),
               Text("It's a simple example of\n dark theme",textAlign: TextAlign.center,style: TextStyle(color: providerQuotesPageTrue.isDark?Colors.white38:Colors.black38,fontSize: 23,),),
               SizedBox(height: 30,),
-              ElevatedButton(onPressed: () {
-                Navigator.of(context).pushNamed('/photo');
-              }, child: const Text('Gallery Page')),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton(onPressed: () {
+                    Navigator.of(context).pushNamed('/photo');
+                  }, child: const Text('Gallery Page')),
+                  ElevatedButton(onPressed: () {
+                    Navigator.of(context).pushNamed('/jsonUse');
+                  }, child: const Text('Json File')),
+                ],
+              ),
               GestureDetector(
                 onTap: () {
                   // setState(() {
