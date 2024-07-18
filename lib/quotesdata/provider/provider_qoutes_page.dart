@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../main.dart';
 import '../modal/modal_qoutes_page.dart';
+import 'package:local_auth/local_auth.dart';
+import 'dart:async';
+
 
 class ProviderQuotesPage extends ChangeNotifier {
   bool introBool = false;
@@ -93,29 +97,64 @@ class ProviderQuotesPage extends ChangeNotifier {
     );
     launchUrl(url);
   }
-  void behanceWeb()
-  {
-    Uri url=Uri.parse('https://www.behance.net/prafulpatnecha');
+
+  void behanceWeb() {
+    Uri url = Uri.parse('https://www.behance.net/prafulpatnecha');
     launchUrl(url);
   }
-  void instaWeb()
-  {
-    Uri url=Uri.parse('https://www.instagram.com/prafulpatnecha');
-    launchUrl(url,mode: LaunchMode.externalNonBrowserApplication);
+
+  void instaWeb() {
+    Uri url = Uri.parse('https://www.instagram.com/prafulpatnecha');
+    launchUrl(url, mode: LaunchMode.externalNonBrowserApplication);
   }
-  void sportWeb()
-  {
-    Uri url=Uri.parse('https://dribbble.com/shots/24532478-Spotify-All-Ears-on-you-2');
-    launchUrl(url,mode: LaunchMode.inAppWebView);
+
+  void sportWeb() {
+    Uri url = Uri.parse(
+        'https://dribbble.com/shots/24532478-Spotify-All-Ears-on-you-2');
+    launchUrl(url, mode: LaunchMode.inAppWebView);
   }
-  void githubWeb()
-  {
-    Uri url=Uri.parse('https://github.com/Prafulpatnecha');
-    launchUrl(url,mode: LaunchMode.inAppWebView);
+
+  void githubWeb() {
+    Uri url = Uri.parse('https://github.com/Prafulpatnecha');
+    launchUrl(url, mode: LaunchMode.inAppWebView);
   }
-  void smsMethod()
-  {
-    Uri url=Uri.parse('sms: 6355199097');
+
+  void smsMethod() {
+    Uri url = Uri.parse('sms: 6355199097');
     launchUrl(url);
+  }
+
+  final localAuth = LocalAuthentication();
+  bool checkFinger = false;
+
+  Future<void> fingerMethod() async {
+    List<BiometricType> bioMetricCheck;
+    try {
+      bioMetricCheck = await localAuth.getAvailableBiometrics();
+    } on PlatformException catch (e) {
+      print(e);
+      return;
+    }
+    if (checkFinger) {
+      return;
+    }
+    try {
+      final fingerCheck = await localAuth.authenticate(
+          localizedReason: 'Please authenticate to access secure data',
+          options: AuthenticationOptions(
+          stickyAuth: true,
+          )
+      );
+      // setState()=>
+      checkFinger=fingerCheck;
+    } on PlatformException catch (e) {
+      print(e);
+    }
+    notifyListeners();
+  }
+  void fingerFalse()
+  {
+    checkFinger=false;
   }
 }
+  var mounted=false;

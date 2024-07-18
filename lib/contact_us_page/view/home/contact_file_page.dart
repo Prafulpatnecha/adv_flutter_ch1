@@ -127,17 +127,17 @@ class ContactFilePage extends StatelessWidget {
                     onTap: () {
                       providerQuoteFalse.smsMethod();
                     },
-                    child: Row(children: [
-                      const SizedBox(width: 35,),
+                    child: const Row(children: [
+                      SizedBox(width: 35,),
                       Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 20),
+                        padding: EdgeInsets.symmetric(vertical: 20),
                         child: Icon(Icons.sms)
                       ),
-                      const SizedBox(width: 30,),
-                      const Text('SMS',style: TextStyle(color: Colors.black,fontWeight: FontWeight.w600,fontSize: 18),)
+                      SizedBox(width: 30,),
+                      Text('SMS',style: TextStyle(color: Colors.black,fontWeight: FontWeight.w600,fontSize: 18),)
                     ],),
                   ),
-                  SizedBox(height: 10,)
+                  const SizedBox(height: 10,)
                   // const Padding(
                   //   padding: EdgeInsets.symmetric(horizontal: 25),
                   //   child: Divider(color: Colors.blue,),
