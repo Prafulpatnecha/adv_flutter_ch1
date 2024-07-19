@@ -46,6 +46,9 @@ class HomePage extends StatelessWidget {
                   ElevatedButton(onPressed: () {
                     Navigator.of(context).pushNamed('/jsonUse');
                   }, child: const Text('Json File')),
+                  ElevatedButton(onPressed: () {
+                    Navigator.of(context).pushNamed('/jsonUser');
+                  }, child: const Text('User Json')),
                 ],
               ),
               GestureDetector(

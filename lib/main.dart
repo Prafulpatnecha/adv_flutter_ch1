@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'controller/controlling.dart';
 import 'json_parsing_file/provider/json_provider.dart';
+import 'json_parsing_file_part_2/provider/user_provider.dart';
 bool theme=false;
 bool intro=false;
 Future<void> main() async {
@@ -16,6 +17,7 @@ Future<void> main() async {
       providers: [
         ChangeNotifierProvider(create: (context) => ProviderQuotesPage(),),
         ChangeNotifierProvider(create: (context) => JsonProvider(),),
+        ChangeNotifierProvider(create: (context) => UserProvider(),),
       ],
       builder: (context, child) => const MyApp(),
     ),
