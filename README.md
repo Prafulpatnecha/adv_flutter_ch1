@@ -260,4 +260,21 @@ https://github.com/user-attachments/assets/ca60e536-7c5b-412c-8a55-9662636520b3
 
 https://github.com/user-attachments/assets/a980e6b0-d32e-428f-bacf-c41644cf2bd3
 
+###
+<h1></h1>
+<h3 align="center"><i>8.1 What is JSON & JSON Parsing ?</i></h3>
+<h1></h1>
+<div align="center">
+<img src="https://github.com/Prafulpatnecha/adv_flutter_ch1/blob/master/user_image_1.png" height=450px hspace=20>
+<img src="https://github.com/Prafulpatnecha/adv_flutter_ch1/blob/master/user_image_2.png" height=450px hspace=20>
+</div>
+
+<h1></h1>
+<div align="center">
+<a href="https://github.com/Prafulpatnecha/adv_flutter_ch1/tree/master/lib/json_parsing_file_part_2">-> Code File Link <-</a>
+</div>
+<h1></h1>
+
+
+https://github.com/user-attachments/assets/7363307f-1483-48f6-9ba2-470ef6f91a2a
 
