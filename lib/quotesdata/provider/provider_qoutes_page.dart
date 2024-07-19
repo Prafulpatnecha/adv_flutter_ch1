@@ -141,7 +141,7 @@ class ProviderQuotesPage extends ChangeNotifier {
     try {
       final fingerCheck = await localAuth.authenticate(
           localizedReason: 'Please authenticate to access secure data',
-          options: AuthenticationOptions(
+          options: const AuthenticationOptions(
           stickyAuth: true,
           )
       );

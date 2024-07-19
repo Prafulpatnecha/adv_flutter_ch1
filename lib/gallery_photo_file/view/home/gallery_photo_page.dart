@@ -78,8 +78,8 @@ class GalleryPhotoPage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(height: 5,),
-                        Text(galleryImage[index]['type'],style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 15),),
+                        const SizedBox(height: 5,),
+                        Text(galleryImage[index]['type'],style: const TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 15),),
                         
                       ],
                     ),

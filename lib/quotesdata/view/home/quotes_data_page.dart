@@ -12,7 +12,7 @@ class QuotesDataPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) => ProviderQuotesPage(),
-      builder: (context, child) => MaterialApp(
+      builder: (context, child) => const MaterialApp(
         debugShowCheckedModeBanner: false,
         home: QuotesHomePage(),
       ),
@@ -35,7 +35,7 @@ class QuotesHomePage extends StatelessWidget {
     // providerQuotesPageFalse.provideModal();
     return Scaffold(
       appBar: AppBar(
-        title: Text("Quotes Page"),
+        title: const Text("Quotes Page"),
         centerTitle: true,
       ),
       body: ListView.builder(
@@ -48,7 +48,7 @@ class QuotesHomePage extends StatelessWidget {
             subtitle: Text(providerQuotesPageTrue.quotesAddingList[index]['author']),
             trailing: IconButton(onPressed: () {
               providerQuotesPageFalse.provideRemove(index);
-            },icon: Icon(Icons.delete_outline),),
+            },icon: const Icon(Icons.delete_outline),),
           ),
         ),
       ),
@@ -63,18 +63,18 @@ class QuotesHomePage extends StatelessWidget {
                 children: [
                   TextFormField(
                     controller: txtauthor,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       label: Text('Author Name'),
                       border: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.black)),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   TextFormField(
                     controller: txtquote,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       label: Text('Quotes'),
                       border: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.black)),
@@ -92,7 +92,7 @@ class QuotesHomePage extends StatelessWidget {
                     // provideModal();
                     Navigator.of(context).pop();
                   },
-                  child: Text('Next'),
+                  child: const Text('Next'),
                 ),
               ],
             ),

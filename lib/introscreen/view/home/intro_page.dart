@@ -73,11 +73,11 @@ class IntroPage extends StatelessWidget {
                   return (index != providerQuotesPageTrue.index)
                       ? Row(
                           children: [
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
                             createdNestedCircleAvatar(),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
                           ],
@@ -111,7 +111,7 @@ class IntroPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(50)
                             ),
                             alignment: Alignment.center,
-                            child: Text(
+                            child: const Text(
                 "Let's Go",
                 style: TextStyle(
                     color: Colors.white,
@@ -139,7 +139,7 @@ class IntroPage extends StatelessWidget {
             width: 120,
             decoration: BoxDecoration(
               color: Colors.green.shade100,
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 bottomRight: Radius.circular(100),
                 topRight: Radius.circular(100),
               ),
@@ -161,13 +161,13 @@ class IntroPage extends StatelessWidget {
             width: 120,
             decoration: BoxDecoration(
               color: greenDarkColor,
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(100),
                 bottomLeft: Radius.circular(100),
               ),
             ),
             alignment: Alignment.center,
-            child: Text(
+            child: const Text(
               'Next',
               style: TextStyle(
                   color: Colors.white,

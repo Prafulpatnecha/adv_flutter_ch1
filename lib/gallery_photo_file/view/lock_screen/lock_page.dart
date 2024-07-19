@@ -17,13 +17,13 @@ class LockPage extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Row(children: [],),
-          Spacer(),
-          Icon(Icons.fingerprint_outlined,color: Colors.blue,size: 60,),
+          const Row(children: [],),
+          const Spacer(),
+          const Icon(Icons.fingerprint_outlined,color: Colors.blue,size: 60,),
           (providerQuotesPageTrue.checkFinger)?IconButton(onPressed: () {
             Navigator.of(context).pushNamed('/secure');
-          }, icon: Icon(Icons.navigate_next,size: 60,color: Colors.black,),):Container(),
-          SizedBox(height: 80,),
+          }, icon: const Icon(Icons.navigate_next,size: 60,color: Colors.black,),):Container(),
+          const SizedBox(height: 80,),
         ],
       ),
     );

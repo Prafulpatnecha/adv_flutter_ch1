@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
               SizedBox(height: height*0.1,),
               Text('Yo Man!',style: TextStyle(color: providerQuotesPageTrue.isDark?Colors.white:Colors.black,fontSize: 30,fontWeight: FontWeight.bold,),),
               Text("It's a simple example of\n dark theme",textAlign: TextAlign.center,style: TextStyle(color: providerQuotesPageTrue.isDark?Colors.white38:Colors.black38,fontSize: 23,),),
-              SizedBox(height: 30,),
+              const SizedBox(height: 30,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [

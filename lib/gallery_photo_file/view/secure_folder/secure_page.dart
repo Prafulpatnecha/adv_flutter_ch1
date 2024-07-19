@@ -12,9 +12,9 @@ class SecurePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         surfaceTintColor: Colors.white,
-        title: Text('Resent',style: TextStyle(color: Colors.black),),
+        title: const Text('Resent',style: TextStyle(color: Colors.black),),
         leading: const Icon(Icons.menu,color: Colors.black,),
-        actions: [
+        actions: const [
           Icon(Icons.search_sharp),
           Icon(Icons.more_vert),
         ],
@@ -22,9 +22,9 @@ class SecurePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
             buildRow(),
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
             Wrap(
               spacing: 15,
               children: [
@@ -53,9 +53,9 @@ class SecurePage extends StatelessWidget {
                 },)
               ],
             ),
-            SizedBox(height: 10,),
+            const SizedBox(height: 10,),
             buildRow(),
-            SizedBox(height: 10,),
+            const SizedBox(height: 10,),
             Wrap(
               spacing: 15,
               children: [
@@ -91,7 +91,7 @@ class SecurePage extends StatelessWidget {
   }
 
   Row buildRow() {
-    return Row(
+    return const Row(
           children: [
             SizedBox(width: 10,),
           Text('Today',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20),),

@@ -19,7 +19,7 @@ class ContactPage extends StatelessWidget {
                 Navigator.of(context).pop();
               }, icon: const Icon(Icons.navigate_before,color: Colors.blue,size: 34,)),
               const Text('Contact Us',style: TextStyle(color: Colors.blue,fontSize: 30,fontWeight: FontWeight.bold),),
-              Spacer(),
+              const Spacer(),
               IconButton(onPressed: () {
                 Navigator.of(context).pushNamed('/contact2');
               }, icon: const Icon(Icons.navigate_next_outlined,color: Colors.blue,size: 34,)),
@@ -135,7 +135,7 @@ class ContactPage extends StatelessWidget {
                     const Text('Leo Natsume',style: TextStyle(color: Colors.black,fontWeight: FontWeight.w600,fontSize: 18),)
                   ],),
                 ),
-                SizedBox(height: 10,)
+                const SizedBox(height: 10,)
                 // const Padding(
                 //   padding: EdgeInsets.symmetric(horizontal: 25),
                 //   child: Divider(color: Colors.blue,),
