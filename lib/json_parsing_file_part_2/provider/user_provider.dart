@@ -14,6 +14,7 @@ class UserProvider extends ChangeNotifier
     String json=await rootBundle.loadString('assets/json/user_json.json');
     List userList = jsonDecode(json);
     userJsonList=userList.map((e) => UserModal.fromUser(e),).toList();
+    notifyListeners();
   }
   UserProvider()
   {
