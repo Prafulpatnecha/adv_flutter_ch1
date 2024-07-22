@@ -31,92 +31,97 @@ class HomePage extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
             color: providerQuotesPageTrue.isDark?Colors.black:Colors.white
           ),
-          child: Column(
-            children: [
-              SizedBox(height: height*0.1,),
-              Text('Yo Man!',style: TextStyle(color: providerQuotesPageTrue.isDark?Colors.white:Colors.black,fontSize: 30,fontWeight: FontWeight.bold,),),
-              Text("It's a simple example of\n dark theme",textAlign: TextAlign.center,style: TextStyle(color: providerQuotesPageTrue.isDark?Colors.white38:Colors.black38,fontSize: 23,),),
-              const SizedBox(height: 30,),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  ElevatedButton(onPressed: () {
-                    Navigator.of(context).pushNamed('/photo');
-                  }, child: const Text('Gallery Page')),
-                  ElevatedButton(onPressed: () {
-                    Navigator.of(context).pushNamed('/jsonUse');
-                  }, child: const Text('Json File')),
-                  ElevatedButton(onPressed: () {
-                    Navigator.of(context).pushNamed('/jsonUser');
-                  }, child: const Text('User Json')),
-                ],
-              ),
-              GestureDetector(
-                onTap: () {
-                  // setState(() {
-                    providerQuotesPageFalse.darkAndLightMode(false);
-                  // });
-                },
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Container(
-                    height:115,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                    color: colorYellow,
-                      borderRadius: BorderRadius.circular(15),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                SizedBox(height: height*0.1,),
+                Text('Yo Man!',style: TextStyle(color: providerQuotesPageTrue.isDark?Colors.white:Colors.black,fontSize: 30,fontWeight: FontWeight.bold,),),
+                Text("It's a simple example of\n dark theme",textAlign: TextAlign.center,style: TextStyle(color: providerQuotesPageTrue.isDark?Colors.white38:Colors.black38,fontSize: 23,),),
+                const SizedBox(height: 30,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    ElevatedButton(onPressed: () {
+                      Navigator.of(context).pushNamed('/photo');
+                    }, child: const Text('Gallery Page')),
+                    ElevatedButton(onPressed: () {
+                      Navigator.of(context).pushNamed('/jsonUse');
+                    }, child: const Text('Json File')),
+                    ElevatedButton(onPressed: () {
+                      Navigator.of(context).pushNamed('/jsonUser');
+                    }, child: const Text('User Json')),
+                  ],
+                ),
+                GestureDetector(
+                  onTap: () {
+                    // setState(() {
+                      providerQuotesPageFalse.darkAndLightMode(false);
+                    // });
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Container(
+                      height:115,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                      color: colorYellow,
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      alignment: Alignment.center,
+                      child: Text('Light Icon',style: TextStyle(color: providerQuotesPageTrue.isDark?Colors.white:Colors.black,fontWeight: FontWeight.bold,fontSize: 25),),
                     ),
-                    alignment: Alignment.center,
-                    child: Text('Light Icon',style: TextStyle(color: providerQuotesPageTrue.isDark?Colors.white:Colors.black,fontWeight: FontWeight.bold,fontSize: 25),),
                   ),
                 ),
-              ),
-              GestureDetector(
-                onTap: () {
-                  // setState(() {
-                    providerQuotesPageFalse.darkAndLightMode(true);
-                  // });
-                },
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Container(
-                    height:115,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                    color: colorRed,
-                      borderRadius: BorderRadius.circular(15),
+                GestureDetector(
+                  onTap: () {
+                    // setState(() {
+                      providerQuotesPageFalse.darkAndLightMode(true);
+                    // });
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Container(
+                      height:115,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                      color: colorRed,
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      alignment: Alignment.center,
+                      child: Text('Dark Icon',style: TextStyle(color: providerQuotesPageTrue.isDark?Colors.white:Colors.black,fontWeight: FontWeight.bold,fontSize: 25),),
                     ),
-                    alignment: Alignment.center,
-                    child: Text('Dark Icon',style: TextStyle(color: providerQuotesPageTrue.isDark?Colors.white:Colors.black,fontWeight: FontWeight.bold,fontSize: 25),),
                   ),
                 ),
-              ),
-              Row(
-                children: [
-                  ElevatedButton(onPressed: () {
-                    Navigator.of(context).pushNamed('/stepper');
-                  }, child: const Text('Stepper Go To Next Page')),
-                  ElevatedButton(onPressed: () {
-                    Navigator.of(context).pushNamed('/contact');
-                  }, child: const Text('Contact Us Page')),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  ElevatedButton(onPressed: () {
-                    Navigator.of(context).pushNamed('/provider');
-                  }, child: const Text('Provider')),
-                  ElevatedButton(onPressed: () {
-                    providerQuotesPageFalse.introBoolCheckOn();
-                    // Navigator.of(context).pushNamed('/intro');
-                  }, child: const Text('Intro Re-On')),
-                  ElevatedButton(onPressed: () {
-                    Navigator.of(context).pushNamed('/quotes');
-                  }, child: const Text('Quotes')),
-                ],
-              ),
-            ],
+                Row(
+                  children: [
+                    ElevatedButton(onPressed: () {
+                      Navigator.of(context).pushNamed('/stepper');
+                    }, child: const Text('Stepper Go To Next Page')),
+                    ElevatedButton(onPressed: () {
+                      Navigator.of(context).pushNamed('/contact');
+                    }, child: const Text('Contact Us Page')),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    ElevatedButton(onPressed: () {
+                      Navigator.of(context).pushNamed('/provider');
+                    }, child: const Text('Provider')),
+                    ElevatedButton(onPressed: () {
+                      providerQuotesPageFalse.introBoolCheckOn();
+                      // Navigator.of(context).pushNamed('/intro');
+                    }, child: const Text('Intro Re-On')),
+                    ElevatedButton(onPressed: () {
+                      Navigator.of(context).pushNamed('/quotes');
+                    }, child: const Text('Quotes')),
+                  ],
+                ),
+                    ElevatedButton(onPressed: () {
+                      Navigator.of(context).pushNamed('/jsonPost');
+                    }, child: const Text('Post Json')),
+              ],
+            ),
           ),
         ),
       ),

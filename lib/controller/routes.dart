@@ -11,6 +11,7 @@ import '../home/stepper/stepper_example.dart';
 import '../home/stepper/stepper_page_work.dart';
 import '../introscreen/view/home/intro_page.dart';
 import '../json_parsing_file/view/home/json_parsing_page.dart';
+import '../post_json_folder/view/home/post_page.dart';
 import '../quotesdata/view/home/quotes_data_page.dart';
 class AppRoutes
 {
@@ -28,5 +29,6 @@ class AppRoutes
     '/secure':(context)=> const SecurePage(),
     '/jsonUse':(context)=> const JsonParsingPage(),
     '/jsonUser':(context)=> const UserScreenPage(),
+    '/jsonPost':(context)=> const PostPage(),
   };
 }

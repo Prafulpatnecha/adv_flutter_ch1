@@ -1,3 +1,4 @@
+import 'package:adv_flutter_ch1/post_json_folder/provider/post_provider.dart';
 import 'package:adv_flutter_ch1/quotesdata/provider/provider_qoutes_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -18,6 +19,7 @@ Future<void> main() async {
         ChangeNotifierProvider(create: (context) => ProviderQuotesPage(),),
         ChangeNotifierProvider(create: (context) => JsonProvider(),),
         ChangeNotifierProvider(create: (context) => UserProvider(),),
+        ChangeNotifierProvider(create: (context) => PostProvider(),),
       ],
       builder: (context, child) => const MyApp(),
     ),
